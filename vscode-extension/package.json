@@ -1,0 +1,73 @@
+{
+  "name": "darkmode-pdf",
+  "displayName": "Darkmode PDF",
+  "description": "Render Markdown files to fixed-style dark-mode PDFs using the bundled darkmode-pdf CLI.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "license": "UNLICENSED",
+  "files": [
+    "extension.js",
+    "README.md",
+    "assets/**",
+    "bin/**"
+  ],
+  "scripts": {
+    "stage:darwin-arm64": "node ./scripts/stage-binary.js --target darwin-arm64 --build",
+    "stage:win32-x64": "node ./scripts/stage-binary.js --target win32-x64 --build",
+    "stage:win32-arm64": "node ./scripts/stage-binary.js --target win32-arm64 --build",
+    "stage:linux-x64": "node ./scripts/stage-binary.js --target linux-x64 --build",
+    "stage:linux-arm64": "node ./scripts/stage-binary.js --target linux-arm64 --build"
+  },
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "activationEvents": [
+    "onCommand:darkmodePdf.renderCurrentFile",
+    "onCommand:darkmodePdf.showRuntimeInfo"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "darkmodePdf.renderCurrentFile",
+        "title": "Darkmode PDF: Render Current Markdown File"
+      },
+      {
+        "command": "darkmodePdf.showRuntimeInfo",
+        "title": "Darkmode PDF: Show Runtime Info"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "darkmodePdf.renderCurrentFile",
+          "when": "resourceExtname == .md",
+          "group": "navigation@99"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "darkmodePdf.renderCurrentFile",
+          "when": "resourceExtname == .md",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Darkmode PDF",
+      "properties": {
+        "darkmodePdf.binaryPath": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Absolute path override for the `darkmode-pdf` binary. Leave empty to use the bundled platform binary."
+        }
+      }
+    }
+  }
+}

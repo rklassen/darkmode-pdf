@@ -1,0 +1,14 @@
+pub(crate) const PAGE_WIDTH_MM: f64 = 210.0;
+pub(crate) const PAGE_HEIGHT_MM: f64 = 297.0;
+pub(crate) const MARGIN_TOP_MM: f64 = 14.942_965;
+pub(crate) const MARGIN_LEFT_MM: f64 = 24.177_717;
+pub(crate) const MARGIN_RIGHT_MM: f64 = 24.177_717;
+pub(crate) const MARGIN_BOTTOM_MM: f64 = 39.119_546;
+pub(crate) const BLOCK_GAP_MM: f64 = 3.0;
+pub(crate) const CODE_BLOCK_PADDING_MM: f64 = 3.5;
+pub(crate) const TABLE_CELL_PAD_X_MM: f64 = 2.6;
+pub(crate) const TABLE_CELL_PAD_Y_MM: f64 = 1.8;
+pub(crate) const TABLE_GRID_MM: f64 = 0.28;
+pub(crate) const BODY_FONT_PT: f64 = 10.0;
+pub(crate) const MONO_OPTICAL_ADJUSTMENT: f64 = 0.8;
+pub(crate) const GOLDEN_RATIO: f64 = 1.618;

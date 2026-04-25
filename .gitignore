@@ -1,0 +1,7 @@
+/target
+/out/
+/vscode-extension/bin/*/*
+!/vscode-extension/bin/README.md
+!/vscode-extension/bin/*/
+!/vscode-extension/bin/*/.gitkeep
+.DS_Store
