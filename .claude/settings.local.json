@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(fbx|blend|glb|obj|prefab\\)$\")",
+      "Bash(xargs grep *)",
+      "WebFetch(domain:osmdata.openstreetmap.de)",
+      "Bash(cargo check *)",
+      "Read(//c/Users/richa/GitHub/lixeira/**)",
+      "Read(//c/Users/richa/GitHub/lixeira/rfb/**)",
+      "Bash(cp 'C:/Users/richa/GitHub/Craig-Art-and-Sound/craig/craig_player/pixelcraig r8.blend' 'C:/Users/richa/GitHub/lixeira/rfb/2026-04-26T1641Z dwisroom craig/craig/')",
+      "Bash(cp 'C:/Users/richa/GitHub/Craig-Art-and-Sound/enemies/enemies r12.blend' 'C:/Users/richa/GitHub/lixeira/rfb/2026-04-26T1641Z dwisroom craig/craig/')",
+      "Bash(cp 'C:/Users/richa/GitHub/Craig-Art-and-Sound/art 3d/office/officeprops v5.blend' 'C:/Users/richa/GitHub/lixeira/rfb/2026-04-26T1641Z dwisroom craig/craig/')",
+      "Bash(cp 'C:/Users/richa/GitHub/Craig-Art-and-Sound/art 3d/street/Street Level.blend' 'C:/Users/richa/GitHub/lixeira/rfb/2026-04-26T1641Z dwisroom craig/craig/')",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/richa/AppData/Local/Programs/**)",
+      "Read(//c/Users/richa/.claude/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Read(//c/Users/richa/**)",
+      "Read(//c/Program Files \\(x86\\)/Steam/steamapps/common/Blender/**)",
+      "Bash(reg query *)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('/c/Users/richa/.claude.json'\\)\\); print\\(list\\(d.keys\\(\\)\\)[:20]\\); print\\('mcpServers:', 'mcpServers' in d\\)\")"
+    ]
+  }
+}
